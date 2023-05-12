@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>artlab个人页面</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="shortcut icon" href="品优购.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/personcenter.css">
+    <script src="../js/jQuery.min.js"></script>
+    <script src="../js/personcenter.js"></script>
+</head>
+
+<body>
+    <!--header部分-->
+    <div class="header " id="gotop">
+        <li><a class="ps_date" href="personcenter.html">个人中心</a></li>
+        <li><a class="hometown" href="index.html">首页</a></li>
+        <li><a class="market" href="market.html">交易市场</a></li>
+        <div class="reg_sign">我要去<a href="sign.html">登录</a>/ <a href="register.html">注册</a></div>
+    </div>
+    <!--nav导航栏-->
+    <div class="nav">
+        <div class="w">
+            <div class="dropdown">
+                <div class="dt">作品分类</div>
+            </div>
+            <div class="navitems">
+                <ul>
+                    <li><a href="#">常看榜单</a></li>
+                    <li><a href="#">新品榜</a></li>
+                    <li><a href="#">hotspot榜单</a></li>
+                    <li><a href="#">他人在看</a></li>
+                    <li><a href="#">收藏榜</a></li>
+                    <li><a href="#">猜你喜欢</a></li>
+                    <li><input type="text"><button>搜索</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--sidebar部分-->
+    <div class="sidebar">
+        <ul>
+            <li>个人信息</li>
+            <li>我的订单</li>
+            <li>我的NFT</li>
+            <li>铸造NFT</li>
+            <li>我的收藏</li>
+        </ul>
+    </div>
+    <!--右侧栏部分-->
+    <div class="r_sider">
+        <a href="#">
+            <div class="setup">设置</div>
+        </a>
+        <a href="#">
+            <div class="cser">客服</div>
+        </a>
+        <a href="#">
+            <div class="hel">帮助</div>
+        </a>
+        <a href="#">
+            <div class="mod">模式</div>
+        </a>
+        <a href="#">
+            <div class="mor">更多</div>
+        </a>
+    </div>
+    <div class="www">
+        <!--个人信息-->
+        <div class="w pc_dt" id="pc_dt">
+            <div class="pc_dt_hd">
+                个人信息
+            </div>
+            <div class="pc_dt_bd">
+                <ul>
+                    <li>
+                        <div class="profile"></div> 用户名：向野的fafa
+                    </li>
+                    <li class="bri_intro">个人简介：我是一个可爱的奋斗的大大大大艺术家和收藏家~欢迎大家来到我的空间！</li>
+                    <li>
+                        <div class="left1">
+                            <div class="gas_num">资产gas:待定</div>
+                            <div class="card">绑定银行卡：************8888</div>
+                            <div class="wechat">绑定微信账号：******8888</div>
+                        </div>
+                        <div class="left2">
+                            <div class="blood">血型：A型血</div>
+                            <div class="mailbox">邮箱：3024888888@qq.com</div>
+                        </div>
+                        <div class="left3">
+                            <div class="hobby">爱好：像素画，人物画，场景类......
+                            </div>
+                            <div class="more">**:待定</div><a href="#">修改个人信息</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--我的订单部分-->
+        <div class="w order" id="order">
+            <div class="order_hd">
+                我的订单
+            </div>
+            <div class="order_bd">
+                <table cellspacing="0">
+                    <tr class="th1">
+                        <td>作品</td>
+                        <td>作者</td>
+                        <td>购买日期</td>
+                        <td>花费汽油</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="wg1"></div>
+                        </td>
+                        <td>向野而生</td>
+                        <td>2022.4.3</td>
+                        <td>0.5gas</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="wg2"></div>
+                        </td>
+                        <td>向野而生</td>
+                        <td>2022.4.3</td>
+                        <td>0.5gas</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="wg3"></div>
+                        </td>
+                        <td>向野而生</td>
+                        <td>2022.4.3</td>
+                        <td>0.5gas</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="wg4"></div>
+                        </td>
+                        <td>向野而生</td>
+                        <td>2022.4.3</td>
+                        <td>0.5gas</td>
+                    </tr>
+                </table>
+                <button><a href="#">查看更多</a></button>
+            </div>
+            <div class="order_rrd"></div>
+        </div>
+        <!--我的NFT部分-->
+        <div class="w  mynft" id="mynft">
+            <div class="mynft_hd">
+                我的NFT
+            </div>
+            <div class="mynft_bd">
+                <table cellspacing="0">
+                    <tr class="th1">
+                        <td>作品</td>
+                        <td>出售状态</td>
+                        <td>铸造日期</td>
+                        <td>定价</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="mw1"></div>
+                        </td>
+                        <td>已售出</td>
+                        <td>2022.4.2</td>
+                        <td>0.5gas</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="mw2"></div>
+                        </td>
+                        <td>未售出</td>
+                        <td>2022.4.3</td>
+                        <td>0.5gas</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="mw3"></div>
+                        </td>
+                        <td>已售出</td>
+                        <td>2022.4.3</td>
+                        <td>0.5gas</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="mw4"></div>
+                        </td>
+                        <td>已售出</td>
+                        <td>2022.4.3</td>
+                        <td>0.5gas</td>
+                    </tr>
+                </table>
+                <button><a href="#">查看更多</a></button>
+                <button><a href="#">管理NFT</a></button>
+            </div>
+            <div class="mynft_rrd"></div>
+        </div>
+        <!--铸造NFT部分-->
+        <div class="w casting" id="casting">
+            <div class="casting_hd">
+                铸造NFT
+            </div>
+            <div class="casting_bd">
+                <form action="">
+                    <div class="left">
+                        <li class="logo"><label for="">*logo:</label><input type="file"></li>
+                        <li><label for="">*作品名称：</label><input type="text"></li>
+                        <li><label for="">*作品描述：</label><textarea name="" id="" cols="30" rows="15"></textarea></li>
+                    </div>
+                    <div class="right">
+                        <li><label for="">*链：</label><select name="" id="">
+                                <option value="#">#</option>
+                                <option value="&&&&&&">&&&&&&&</option>
+                            </select></li>
+                        <li><label for="">*合约类型：</label><select name="" id="">
+                                <option value="********00000000">*********0000000000</option>
+                            </select></li>
+                        <li><label for="">*NFT Token数量：</label><input type="number"></li>
+                        <li><input class="sub" type="submit"></li>
+                    </div>
+                </form>
+            </div>
+            <div class="casting_rrd"></div>
+        </div>
+        <!--我的收藏部分-->
+        <div class="w collect" id="collect">
+            <div class="collect_hd">
+                我的收藏
+            </div>
+            <div class="collect_bd">
+                <div class="card">
+                    <div class="photo"><img src="../upload/collect (1).png" alt=""></div>
+                    <h1>烟雾</h1>
+                    <h2>作者：向野的野象</h2>
+                    <h3>0.5gas</h3>
+                    <p>烟雾缭绕，万象俱迷。心事几许，不知何理。等天明，见曙光，方了却忧愁郁闷......</p>
+                    <a href="#">去作品主页</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="../upload/collect (2).png" alt=""></div>
+                    <h1>深夜</h1>
+                    <h2>作者：向野的野象</h2>
+                    <h3>0.5gas</h3>
+                    <p>烟雾缭绕，万象俱迷。心事几许，不知何理。等天明，见曙光，方了却忧愁郁闷......</p>
+                    <a href="#">去作品主页</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="../upload/collect (3).png" alt=""></div>
+                    <h1>大海深处</h1>
+                    <h2>作者：向野的野象</h2>
+                    <h3>0.5gas</h3>
+                    <p>烟雾缭绕，万象俱迷。心事几许，不知何理。等天明，见曙光，方了却忧愁郁闷......</p>
+                    <a href="#">去作品主页</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="../upload/collect (4).png" alt=""></div>
+                    <h1>魔法阿贝贝</h1>
+                    <h2>作者：向野的野象</h2>
+                    <h3>0.5gas</h3>
+                    <p>烟雾缭绕，万象俱迷。心事几许，不知何理。等天明，见曙光，方了却忧愁郁闷......</p>
+                    <a href="#">去作品主页</a>
+                </div>
+                <button><a href="#">查看更多</a></button>
+            </div>
+            <div class="collect_rrd"></div>
+
+        </div>
+    </div>
+    <!--回顶部的设置-->
+    <div class="gotop">
+        <a href="#gotop">返回顶部</a>
+    </div>
+    <!--footer部分-->
+    <footer class="footer">
+        <div class="w">
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <h5></h5>
+                        <div class="service_txt">
+                            <h4>关于nft</h4>
+                            <p>关于nft的更多问题</p>
+                        </div>
+                    </li>
+                    <li>
+                     <h5></h5>
+                     <div class="service_txt">
+                         <h4>关于nft</h4>
+                         <p>关于nft的更多问题</p>
+                     </div>
+                 </li>
+                 <li>
+                     <h5></h5>
+                     <div class="service_txt">
+                         <h4>关于nft</h4>
+                         <p>关于nft的更多问题</p>
+                     </div>
+                 </li>
+                 <li>
+                     <h5></h5>
+                     <div class="service_txt">
+                         <h4>关于nft</h4>
+                         <p>关于nft的更多问题</p>
+                     </div>
+                 </li>
+                </ul>
+            </div>
+            <div class="mod_help">
+                <dl>
+                    <dt>关于</dt>
+                    <dd><a href="#">探索</a></dd>
+                    <dd><a href="#">怎么运行的</a></dd>
+                    <dd><a href="#">支持</a></dd>
+                    <dd><a href="#">成为一个合伙人</a></dd>
+                    <dd><a href="#">......</a></dd>
+                </dl>
+                <dl>
+                 <dt>NFT市场</dt>
+                 <dd><a href="#">出售您的资产</a></dd>
+                 <dd><a href="#">常见问题</a></dd>
+                 <dd><a href="#">支持</a></dd>
+                 <dd><a href="#">隐私政策</a></dd>
+                 <dd><a href="#">您的购买</a></dd>
+             </dl>
+             <dl>
+                 <dt>公司</dt>
+                 <dd><a href="#">关于</a></dd>
+                 <dd><a href="#">使命与团队</a></dd>
+                 <dd><a href="#">我们的顾客</a></dd>
+                 <dd><a href="#">服务</a></dd>
+                 <dd><a href="#">我们正在招聘</a></dd>
+             </dl>
+             <dl>
+                 <dt>社区</dt>
+                 <dd><a href="#">NFT代币</a></dd>
+                 <dd><a href="#">讨论</a></dd>
+                 <dd><a href="#">表决</a></dd>
+                 <dd><a href="#">推荐功能</a></dd>
+                 <dd><a href="#">语言</a></dd>
+             </dl>
+             <dl>
+                 <dt>社区</dt>
+                 <dd><a href="#">NFT代币</a></dd>
+                 <dd><a href="#">讨论</a></dd>
+                 <dd><a href="#">表决</a></dd>
+                 <dd><a href="#">推荐功能</a></dd>
+                 <dd><a href="#">语言</a></dd>
+             </dl>
+            
+               
+             <dl>
+                 <dt>微信扫码</dt>
+                 <img src="../images/wx_cz.jpg" alt="">
+                 <dd>更多服务</dd>
+             </dl>
+            </div>
+            <div class="mod_copyright">
+                <div class="links">
+                   <a href="#">关于我们</a>|<a href="#">更多详情</a>|<a href="#">关于我们</a>|<a href="#">更多详情</a>|<a href="#">关于我们</a>|<a href="#">更多详情</a>|<a href="#">关于我们</a>|<a href="#">更多详情</a>|
+                </div>
+                <div class="copyright">
+                    地址：北京市朝阳区**********  邮编：111111 电话：666666666666666 联系人：***
+                </div>
+            </div>
+        </div>
+     </footer>
+</body>
+
+</html>

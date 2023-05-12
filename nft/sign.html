@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/sign.css">
+    <link rel="shortcut icon" href="品优购.ico" type="image/x-icon"/>
+    <title>artlab-登录页面</title>
+</head>
+<body>
+    <div class="header">
+        <li><a class="ps_date" href="personcenter.html">个人中心</a></li>
+        <li><a class="hometown" href="index.html">首页</a></li>
+        <li><a class="market" href="market.html">交易市场</a></li>
+        <div class="reg_sign">我要去<a href="sign.html">登录</a>/ <a href="register.html">注册</a></div>
+    </div>
+    <div class="sign_in">
+        <div class="sign_in_hd">
+            <h5>用户登录</h5>
+        </div>
+        <div class="sign_in_bd">
+            <form action="index.html">
+                <ul>
+                    <li><label for="">用户名：</label><input type="tel" class="inp"><li>
+                    <li><label for="">输入密码：</label><input type="password" class="inp"><li>
+                    <li><p class="error_icon">密码为6~16位字母、数字组合而成</p></li>
+                    <li><label for=""></label><input type="submit" value="完成登录"  class="btn"></li>
+                    <li class="passw">忘记密码？<a href="#">找回密码</a></li>
+                    <li class="reg">没有账号？去<a href="register.html">注册</a></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var ipt =document.querySelector('.inp');
+        var message = document.querySelector('.error_icon');
+        ipt.onblur = function() {
+            if (this.value.length < 6 || this.value.length > 16) {
+                message.className ='error_icon error';
+                message.innerHTML = '您输入的位数不满足6~16位';
+            } else {
+                message.className ='error_icon right';
+                message.innerHTML = '您输入的密码形式正确';
+            }
+        }
+    </script>
+</body>
+</html>

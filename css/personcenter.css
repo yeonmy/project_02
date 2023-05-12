@@ -1,0 +1,360 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?se2lnw');
+    src:  url('../fonts/icomoon.eot?se2lnw#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?se2lnw') format('truetype'),
+      url('../fonts/icomoon.woff?se2lnw') format('woff'),
+      url('..//icomoon.svg?se2lnw#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+.w{
+    width:1200px;
+    margin:0 auto;
+    background-color: #fff;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background: rgba(0,0,0,0.5);
+    color:#fff;
+}
+.header a{
+   color:#fff;
+}
+.header a:hover{
+    color:#f3e308;
+}
+.header li{
+    float: left;
+    margin:8px 30px;
+    font-size:17px;
+    color:#fff;
+}
+.header .ps_date::before{
+    content:"\e907";
+    font-family: 'icomoon';
+    font-size:35px;
+    margin-right: 3px;
+}
+.header .hometown::before{
+    content:"\e902";
+    font-family: 'icomoon';
+    font-size:35px;
+    margin-right: 3px;
+}
+.header .market::before{
+    content:"\e9a8";
+    font-family: 'icomoon';
+    font-size:35px;
+    margin-right: 3px;
+}
+.reg_sign{
+    float: right;
+    margin:20px 30px;
+    font-size:20px;
+}
+.reg_sign a{
+    color:#57a2f8;
+}
+body{
+    width: 100%;
+    min-height:100vh;
+    background:transparent url(../images/background1.png) no-repeat center fixed;
+    font-size:15px;
+    color:#fff;
+    position: relative;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*个人信息*/
+.pc_dt{
+    background-color:  rgba(36, 138, 255, 0.9);
+    border-radius:35px;
+    position: relative;
+    top:120px;
+    height: 700px;
+    margin-bottom: 250px;
+}
+.pc_dt_hd,
+.order_hd,
+.mynft_hd,
+.casting_hd,
+.collect_hd{
+    text-align: center;
+    height: 65px;
+    font-size:35px;
+    border-bottom: 7px solid rgb(0, 0, 0,0.7);
+}
+.pc_dt_bd,
+.order_bd,
+.mynft_bd,
+.casting_bd,
+.collect_bd{
+    background-color: #fff;
+    color:black;
+    border:6px solid   rgb(0, 0, 0,0.7);
+    height: 580px;
+}
+.pc_dt_bd ul li{
+    font-size:20px;
+    margin: 25px;
+}
+.pc_dt_bd ul li .profile{
+    display: inline-block;
+    background: url(../images/pro.jpg) no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius:50px;
+}
+.pc_dt_bd .bri_intro{
+    border: 3px solid rgb(0,0,0);
+    border-radius:25px;
+    background-color: #fff;
+    color:black;
+    font-style: italic;
+    height: 200px;
+    padding:20px;
+}
+.pc_dt_bd .gas_num::before{
+    content:"\e909";
+    font-family: 'icomoon';
+    margin-right:5px;
+    font-size:19px;
+}
+.pc_dt_bd a{
+    color:rgba(36, 138, 255, 0.9);
+    font-size: 18px;
+}
+.pc_dt_bd a::before{
+    content:"\e900";
+    font-family: 'icomoon';
+}
+.pc_dt_bd .card::before,
+.pc_dt_bd .wechat::before{
+    content:"\e9d1";
+    font-family: 'icomoon';
+    font-size:19px;
+    margin-right: 10px;
+}
+.pc_dt_bd ul li .left1,
+.pc_dt_bd ul li .left2,
+.pc_dt_bd ul li .left3{
+    float: left;
+    height: 175px;
+    font-size: 18px;
+    color:#757575;
+    padding: 2px 40px;
+    border:4px dotted rgba(36, 138, 255, 0.9);
+}
+.pc_dt_bd ul li .left1 div,
+.pc_dt_bd ul li .left2 div,
+.pc_dt_bd ul li .left3 div{
+     padding: 15px 3px ;
+    }
+/*我的订单部分*/
+.order,
+.mynft,
+.casting,
+.collect{
+    margin-top: 150px;
+    height: 700px;
+    background-color: rgba(36, 138, 255, 0.9);
+    border-radius:35px;
+}
+.order_bd table tr td,
+.mynft_bd table tr td{
+    padding:5px  100px;
+    width: 300px;
+    height: 115px;
+    border:2px solid rgba(36, 138, 255, 0.9);
+    font-size:20px;
+}
+.order_bd .wg1,
+.wg2,
+.wg3,
+.wg4,
+.mynft_bd .mw1,
+.mw2,
+.mw3,
+.mw4{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+.order_bd .wg1{
+    background:#fff url(../upload/work5.png) no-repeat center;
+    background-size: contain;
+}
+.order_bd .wg2{
+    background:#fff url(../upload/work6.png) no-repeat center;
+    background-size: contain;
+}
+.order_bd .wg3{
+    background:#fff url(../upload/work7.png) no-repeat center;
+    background-size: contain;
+}
+.order_bd .wg4{
+    background:#fff url(../upload/work8.png) no-repeat center;
+    background-size: contain;
+}
+.order_bd button,
+.mynft_bd button{
+    background-color: rgba(36, 138, 255, 0.9);
+    position: relative;
+    left:45%;
+    height: 40px;
+    font-size:18px;
+    font-weight: 700;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+.order_rrd,
+.mynft_rrd,
+.casting_rrd,
+.coolect_rrd{
+    background-color: rgba(36, 138, 255, 0.9);
+    text-align: center;
+    height: 65px;
+    font-size:35px;
+    border-top: 7px solid rgb(0, 0, 0,0.7);
+    border-radius: 0 0 40px 40px;
+}
+/*我的NFT*/
+.mynft_bd .mw1{
+    background:#fff url(../upload/mw1\ \(1\).png) no-repeat center;
+    background-size: contain;
+}
+.mynft_bd .mw2{
+    background:#fff url(../upload/mw1\ \(2\).png) no-repeat center;
+    background-size: contain;
+}
+.mynft_bd .mw3{
+    background:#fff url(../upload/mw1\ \(3\).png) no-repeat center;
+    background-size: contain;
+}
+.mynft_bd .mw4{
+    background:#fff url(../upload/mw1\ \(4\).png) no-repeat center;
+    background-size: contain;
+}
+/*铸造nft*/
+.casting_bd .left,
+.casting_bd .right{
+    float: left;
+    width: 570px;
+    height: 520px;
+    font-size: 22px;
+    margin: 10px;
+    border:4px dotted rgba(36, 138, 255, 0.9);
+}
+.casting_bd li{
+    margin: 20px;
+    text-align: center;
+}
+.casting_bd input{
+    width: 400px;
+    height: 50px;
+    font-size:18px;
+    border:3px solid #f3a908;
+    border-radius:25px;
+    padding:10px 30px;
+}
+.casting_bd .logo::before{
+    content:"\e90d";
+    font-family: 'icomoon';
+    font-size: 36px;
+    color:#f3a908;
+}
+.casting_bd .sub{
+    width: 100px;
+}
+/*我的收藏部分*/
+.collect_bd .card{
+    float: left;
+    position: relative;
+    width: 250px;
+    height: 445px;
+    background-color: #758a99;
+    border-radius:30px;
+    overflow:hidden;
+    margin: 20px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    color:#fff;
+    box-shadow: 0 0 16px 4px #072a3b;
+    flex-shrink: 0;
+}
+.collect_bd .card .photo{
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.collect_bd .card .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.collect_bd .card:hover .photo{
+    top:30px;
+    height: 120px;
+    width: 120px;
+    border-radius:50%;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.8)；
+}
+.collect_bd .card h1{
+    position: absolute;
+    top:370px;
+}
+.collect_bd .card:hover h1{
+    top:160px;
+    transition: 0.5s;
+}
+.collect_bd .card .photo::before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom,transparent 50%,#222);
+}
+.collect_bd .card h2{
+    margin-top:200px;
+}
+.collect_bd .card h3{
+    margin-top:20px;
+    color:#f3a908
+}
+.collect_bd .card p{
+    margin-top:20px;
+    margin: 10px;
+    text-indent: 30px;
+}
+.collect_bd .card a{
+    margin-top:20px;
+    color:#f3a908;
+}
+.collect_bd button{
+    padding: 20px;
+    background-color: rgb(15, 138, 253);
+    border-radius:15px;
+    font-size:20px;
+    margin-left: 500px;
+}

@@ -1,0 +1,215 @@
+
+
+.main{
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+    background-color: rgba(39, 121, 122, 0.699);
+    overflow: hidden;
+}
+.character,
+.pet,
+.sight,
+.pixel{
+    width: 980px;
+    height: 455px;
+}
+/*我的收藏部分*/
+.character .card,
+.pet .card,
+.sight .card,
+.pixel .card,
+.character .card{
+    float: left;
+    position: relative;
+    width: 200px;
+    height: 435px;
+    background-color: #758a99;
+    border-radius:30px;
+    overflow:hidden;
+    margin: 10px 20px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    color:#fff;
+    box-shadow: 0 0 16px 4px #072a3b;
+    flex-shrink: 0;
+}
+.character .card .photo,
+.pet .card .photo,
+.sight .card .photo,
+.pixel .card .photo,
+.collect_bd .card .photo{
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.character .card .photo img,
+.pet .card .photo img,
+.sight .card .photo img,
+.pixel .card .photo img,
+.collect_bd .card .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.character .card:hover .photo,
+.pet .card:hover .photo,
+.sight .card:hover .photo,
+.pixel .card:hover .photo,
+.collect_bd .card:hover .photo{
+    top:30px;
+    height: 120px;
+    width: 120px;
+    border-radius:50%;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.8)；
+}
+.character .card h1,
+.pet .card h1,
+.sight .card h1,
+.pixel .card h1,
+.collect_bd .card h1{
+    position: absolute;
+    top:370px;
+}
+.character .card:hover h1,
+.pet .card:hover h1,
+.sight .card:hover h1,
+.pixel .card:hover h1,
+.collect_bd .card:hover h1{
+    top:160px;
+    transition: 0.5s;
+}
+.character .card .photo::before,
+.pet .card .photo::before,
+.sight .card .photo::before,
+.pixel .card .photo::before,
+.collect_bd .card .photo::before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom,transparent 50%,#222);
+}
+.character .card h2,
+.pet .card h2,
+.sight .card h2,
+.pixel .card h2,
+.collect_bd .card h2{
+    margin-top:200px;
+}
+.character .card h3,
+.pet .card h3,
+.sight .card h3,
+.pixel .card h3,
+.collect_bd .card h3{
+    margin-top:20px;
+    color:#f3a908
+}
+.character .card p,
+.pet .card p,
+.sight .card p,
+.pixel .card p,
+.collect_bd .card p{
+    margin-top:20px;
+    margin: 10px;
+    text-indent: 30px;
+}
+.character .card a,
+.pet .card a,
+.sight .card a,
+.pixel .card a,
+.collect_bd .card a{
+    margin-top:20px;
+    color:#f3a908;
+ }
+ .character button,
+.pet button,
+.sight button,
+.pixel button,
+.collect_bd button{
+    padding: 20px;
+    background-color: rgb(15, 138, 253);
+    border-radius:15px;
+    font-size:20px;
+    margin-left: 500px;
+}
+
+
+
+
+
+
+
+
+.box_hd{
+    height: 40px;
+    border-bottom: 4px solid #57a2f8;
+}
+.box_hd h3{
+    font-size: 25px;
+    color: #57a2f8;
+    font-weight:700;
+    position:relative;
+    left:46%;
+}
+
+.floor .w{
+    margin-top:30px;
+}
+.box_bd{
+    height: 940px;
+}
+.box_bd ul li{
+    overflow: hidden;
+    float: left;
+    margin-right: 13px;
+    margin-bottom:13px;
+    width: 290px;
+    height: 390px;
+    border:4px solid #edeeee;
+    background-color: #edeeee;
+}
+.box_bd ul li .paintings{
+    width: 290px;
+    height: 320px;
+    overflow: hidden;
+}
+.box_bd ul li .paintings img{
+    width:100%;
+}
+.box_bd ul li .theme{
+    border-top:4px solid #edeeee;
+    height:40px;
+    font-size:22px;
+    text-align: center;
+}
+.box_bd ul li .price{
+    font-size:11px;
+    text-align: center;
+    height: 11px;
+    color:#daa516;
+}
+.box_bd ul li .price::before{
+    content:"\e93e";
+    font-family: 'icomoon';
+    color:#daa516;
+}
+.box_bd ul li:nth-child(4n){
+    margin-right:0;
+}
+.bb{
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+
+.footer .w a{
+    color:rgb(2, 2, 2);
+}
